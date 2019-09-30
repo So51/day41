@@ -1,0 +1,6 @@
+function day1(){}
+function day2(){}
+day1.prototype = Object.create(day2.prototype);
+const day3 = new day2 ();
+console.log(day1.prototype.isPrototypeOf(day3));
+console.log(day2.prototype.isPrototypeOf(day3));
